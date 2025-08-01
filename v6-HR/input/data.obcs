@@ -1,0 +1,82 @@
+# Open-boundaries
+ &OBCS_PARM01
+# This flag turns off checking and fixing problematic topography across 
+# open boundaries.
+ OBCSfixTopo=.FALSE.,
+ OB_Jsouth(2:560)=559*1,
+ OB_Ieast(1:314)=314*-1,
+
+ useOBCSprescribe = .TRUE.,
+
+ useOBCSbalance = .TRUE.,
+ OBCS_balanceFacS = 1.,
+ OBCS_balanceFacE = 1.,
+
+# useStevensEast = .TRUE.,
+# useStevensSouth = .TRUE.,
+
+ useOBCSsponge = .TRUE.,
+ OBCSsponge_S = .TRUE.,
+ OBCSsponge_E = .TRUE.,
+# OBCSsponge_UatNS = .TRUE.,
+# OBCSsponge_VatNS = .TRUE.,
+
+# useOrlanskiWest = .FALSE.
+# useOrlanskiSouth = .TRUE.
+# useOrlanskiEast = .TRUE.,
+# useOrlanskiNorth = .FALSE.
+
+ OBWuFile = 'uWest.bin',
+ OBWvFile = 'vWest.bin',
+ OBWtFile = 'tWest.bin',
+ OBWsFile = 'sWest.bin',
+
+ OBSuFile   = 'uSouth.bin',
+ OBSvFile   = 'vSouth.bin',
+ OBStFile   = 'tSouth.bin',
+ OBSsFile   = 'sSouth.bin',
+
+ OBEuFile   = 'uEast.bin',
+ OBEvFile   = 'vEast.bin',
+ OBEtFile   = 'tEast.bin',
+ OBEsFile   = 'sEast.bin',
+
+ OBNuFile = 'uNorth.bin', 
+ OBNvFile = 'vNorth.bin',
+ OBNtFile = 'tNorth.bin',
+ OBNsFile = 'sNorth.bin',
+
+# OBWptrFile(1) = 'dyeWest.bin',
+# OBEptrFile(1) = 'dyeEast.bin',
+# OBSptrFile(1) = 'dyeSouth.bin',
+# OBNptrFile(1) = 'dyeNorth.bin',
+
+# OBCS_monitorFreq= 1200.,
+# OBCS_monSelect = 1,
+ &
+
+# Orlanski parameters
+# &OBCS_PARM02
+# cvelTimeScale=2000.,
+# CMAX=0.45,
+# CFIX=0.8,
+# useFixedCEast=.FALSE.,
+# useFixedCWest=.FALSE.,
+# &
+
+# Sponge layer parameters
+ &OBCS_PARM03
+  spongeThickness=20,
+  Urelaxobcsinner = 43200.0,
+  Urelaxobcsbound = 8640.0,
+  Vrelaxobcsinner = 432000.0,
+  Vrelaxobcsbound = 86400.0,
+ &
+
+# Stevens parameters
+ &OBCS_PARM04
+# TrelaxStevens = 86400.,
+# SrelaxStevens = 86400.,
+# useStevensPhaseVel = .FALSE.
+ &
+
