@@ -6,4 +6,4 @@ The circulation model is configured for the NW Atlantic region between Cape Hatt
 
 The simulation can be run from the initial condition with the source codes, configuration setups, and other necessary scripts (including datasets for the initial conditions). The main output files contain extracted MITgcm outputs from a 2-year long simulation with high vertical resolution. Only the 2nd year (360-730 day) outputs are included. Evolution of eddy kinetic energy in the 2-year simulation suggests that the model reaches a quasi-steady state approx. 3/4 year into the simulation. 
 
-Further explanation please refer to chapter 4 of my thesis (or later the associated published paper). This will be updated.
+
